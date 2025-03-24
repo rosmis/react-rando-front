@@ -1,7 +1,8 @@
 import React from "react";
 import { MapRef } from "react-map-gl";
 
-const MapRefContext = React.createContext<React.RefObject<MapRef> | null>(null);
+const MapRefContext =
+    React.createContext<React.RefObject<MapRef | null> | null>(null);
 
 export const MapRefProvider = MapRefContext.Provider;
 

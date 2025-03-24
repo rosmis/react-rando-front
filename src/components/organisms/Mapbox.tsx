@@ -182,7 +182,6 @@ const Mapbox = () => {
                 <Map
                     initialViewState={viewState}
                     mapStyle="mapbox://styles/mapbox/standard"
-                    // mapStyle="mapbox://styles/abdoulaye01/clu26vfli00m301mjgf4z16fy"
                     mapboxAccessToken={mapboxAccessToken}
                     style={{ width: "100vw", height: "100%" }}
                     // onMove={onMove}

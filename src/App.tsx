@@ -9,11 +9,11 @@ function App() {
     const dispatch = useDispatch<AppDispatch>();
     const location: Location = useLocation();
 
-    // useEffect(() => {
-    //     dispatch(setLocationsAsyncWithUrlParams(location));
+    useEffect(() => {
+        dispatch(setLocationsAsyncWithUrlParams(location));
 
-    //     // eslint-disable-next-line react-hooks/exhaustive-deps
-    // }, []);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     return (
         <>

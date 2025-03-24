@@ -1,3 +1,5 @@
+import Mapbox from "@/components/organisms/Mapbox";
+import Sidebar from "@/components/organisms/Sidebar";
 import { MapRefProvider } from "@/composables/useMapRef";
 import React from "react";
 import { MapRef } from "react-map-gl";
@@ -11,9 +13,9 @@ const AppLayout = () => {
 
             <div className="flex flex-col-reverse md:flex-row items-start">
                 <MapRefProvider value={mapRef}>
-                    {/* <Sidebar /> */}
+                    <Sidebar />
 
-                    {/* <Mapbox /> */}
+                    <Mapbox />
                 </MapRefProvider>
             </div>
 

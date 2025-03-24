@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import HikeDetails from "./components/organisms/HikeDetails.tsx";
 import SignIn from "./routes/SignIn.tsx";
 import Register from "./routes/Register.tsx";
+import { store } from "./state/store.ts";
 
 const router = createBrowserRouter([
     {

@@ -1,4 +1,5 @@
 import Mapbox from "@/components/organisms/Mapbox";
+import Navbar from "@/components/organisms/Navbar";
 import Sidebar from "@/components/organisms/Sidebar";
 import { MapRefProvider } from "@/composables/useMapRef";
 import React from "react";
@@ -9,7 +10,7 @@ const AppLayout = () => {
 
     return (
         <>
-            {/* <Navbar /> */}
+            <Navbar />
 
             <div className="flex flex-col-reverse md:flex-row items-start">
                 <MapRefProvider value={mapRef}>

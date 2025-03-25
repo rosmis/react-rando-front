@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import SearchBar from "./Searchbar";
 
 import logo from "@/assets/logo_green.png";
-import ProfileDropdown from "./ProfileDropdown";
 
 const Navbar = () => {
     return (
@@ -13,7 +12,6 @@ const Navbar = () => {
                 </Link>
                 <SearchBar />
 
-                <ProfileDropdown isMobile={false} />
             </div>
         </>
     );

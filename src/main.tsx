@@ -5,8 +5,6 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App.tsx";
 import { Provider } from "react-redux";
 import HikeDetails from "./components/organisms/HikeDetails.tsx";
-import SignIn from "./routes/SignIn.tsx";
-import Register from "./routes/Register.tsx";
 import { store } from "./state/store.ts";
 
 const router = createBrowserRouter([
@@ -19,14 +17,6 @@ const router = createBrowserRouter([
                 element: <HikeDetails />,
             },
         ],
-    },
-    {
-        path: "signin",
-        element: <SignIn />,
-    },
-    {
-        path: "register",
-        element: <Register />,
     },
 ]);
 

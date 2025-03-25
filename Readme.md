@@ -46,7 +46,7 @@ Before you begin, make sure you have the following installed:
     
 
 
-The frontend will be available at [http://localhost:(5173)](http://localhost:(5173)) 🚀
+The frontend will be available at [http://localhost:5173](http://localhost:5173) 🚀
 
 3. **Access the Application:** 🌐
 

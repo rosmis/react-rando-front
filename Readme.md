@@ -33,15 +33,13 @@ Before you begin, make sure you have the following installed:
 
 2. **Initialize the Development Environment:** 🚀
 
-    **Note 👀:** Before running the `init` command, make sure you have the Mapbox API key ready (one sent you via mail).
+    **Note 👀:** Before running the `init` command, make sure you have the Mapbox API key ready (one sent you via teams).
 
     Run the `init` command using `make`. This will execute the `init-dev-env.sh` script which automates the setup process.
 
     ```bash
     make init
     ```
-
-    In the setup process, the command will ask you for the Mapbox API key. Fill in the one I sent you in teams dms.
 
 2.1 **Boot up frontend**
 

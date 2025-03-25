@@ -1,0 +1,43 @@
+services:
+    web:
+        image: rosmis/api_rando:dev
+        volumes:
+            - './.env:/app/.env'
+            - caddy_data:/data
+            - caddy_config:/config
+        tty: true
+        ports:
+            - '80:80'
+        networks:
+            - laravel_network
+        depends_on:
+            db:
+                condition: service_healthy
+    db:
+        image: mysql/mysql-server:8.0
+        ports:
+            - 127.0.0.1:3306:3306
+        environment:
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+            MYSQL_DATABASE: ${DB_DATABASE}
+            MYSQL_USER: ${DB_USERNAME}
+            MYSQL_PASSWORD: ${DB_PASSWORD}
+        volumes:
+            - 'sail-mysql:/var/lib/mysql'
+        networks:
+            - laravel_network
+        healthcheck:
+            test:
+                - CMD
+                - mysqladmin
+                - ping
+                - -p${DB_PASSWORD}
+            timeout: 5s
+networks:
+    laravel_network:
+        driver: bridge
+
+volumes:
+    sail-mysql:
+    caddy_data:
+    caddy_config:

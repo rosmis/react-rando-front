@@ -58,7 +58,7 @@ init_dev_env() {
     docker-compose up -d
     
     # Wait for services to initialize
-    sleep 15
+    sleep 5
 
     docker-compose exec web php artisan db:seed
     
